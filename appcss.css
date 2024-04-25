@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    /* Background image settings */
+    background-image: url("tic-tac-toe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/* Winner message styles */
+#winner {
+    margin-top: 40px; /* Adds margin space at the top */
+    text-align: center; /* Centers the text horizontally */
+    font-size: 10vmin; /* Sets font size based on viewport */
+    color: greenyellow; /* Sets text color */
+    visibility: hidden; /* Hides the winner message initially */
+}
+.start {
+    margin-top: 40px; /* Adds margin space at the top */
+    text-align: center; /* Centers the text horizontally */
+    font-size: 10vmin; /* Sets font size based on viewport */
+    color: greenyellow; /* Sets text color */}
+
+/* Container styles */
+#container {
+    color: beige; /* Sets text color */
+    height: 40vh; /* Sets height based on viewport height */
+    width: 40vw; /* Sets width based on viewport width */
+    position: absolute; /* Positions the container */
+    top: 50%; /* Centers the container vertically */
+    left: 50%; /* Centers the container horizontally */
+    transform: translate(-50%, -50%); /* Centers the container */
+    text-align: center; /* Centers the text horizontally */
+}
+
+/* Button styles */
+.btn {
+    font-size: 33px; /* Sets font size */
+    background-color: beige; /* Sets background color */
+    width: 12vh; /* Sets width based on viewport height */
+    height: 6vw; /* Sets height based on viewport width */
+    border-radius: 4px; /* Adds rounded corners */
+    margin-left: 10px; /* Adds space between buttons */
+}
+
+/* Button hover styles */
+.btn:hover {
+    background-color: rgb(126, 126, 116); /* Changes background color on hover */
+}
+
+/* Row styles */
+.row {
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers contents horizontally */
+    margin-bottom: 10px; /* Adds space between rows */
+}
+
+/* Reset button styles */
+.reset {
+    background-color: rgb(29, 119, 119); /* Sets background color */
+    width: 12vh; /* Sets width based on viewport height */
+    height: 4vw; /* Sets height based on viewport width */
+    border-radius: 4px; /* Adds rounded corners */
+    color: white; /* Sets text color */
+}
+
+/* Reset button hover styles */
+.reset:hover {
+    background-color: rgb(126, 126, 116); /* Changes background color on hover */
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 120px) and (max-width: 605px) {
+    #container {
+        color: beige; /* Sets text color */
+        font-size: 8px; /* Sets font size */
+        height: 50vh; /* Sets height based on viewport height */
+        width: 50vw; /* Sets width based on viewport width */
+        position: absolute; /* Positions the container */
+        top: 50%; /* Centers the container vertically */
+        left: 50%; /* Centers the container horizontally */
+        text-align: center; /* Centers the text horizontally */
+    }
+
+    .btn {
+        font-size: 20px; /* Sets font size */
+        width: 6vh; /* Sets width based on viewport height */
+        height: 15vw; /* Sets height based on viewport width */
+        border-radius: 4px; /* Adds rounded corners */
+        background-color: beige; /* Sets background color */
+        margin-left: 4px; /* Adds space between buttons */
+    }
+
+    .btn:hover {
+        background-color: rgb(126, 126, 116); /* Changes background color on hover */
+    }
+
+    .row {
+        display: flex; /* Uses flexbox layout */
+        justify-content: center; /* Centers contents horizontally */
+        margin-bottom: 4px; /* Adds space between rows */
+    }
+
+    .reset {
+        height: auto; /* Sets height to auto */
+        background-color: rgb(29, 119, 119); /* Sets background color */
+        color: white; /* Sets text color */
+    }
+
+    .reset:hover {
+        background-color: rgb(8, 55, 55); /* Changes background color on hover */
+    }
+}
